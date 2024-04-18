@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Website</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        /* Video container styles */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .video-container video,
+        .video-container img {
+            min-width: 100%;
+            min-height: 100%;
+            width: 10%;
+            height: min-content;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Ensure videos/images are behind content */
+        }
+        .video-container img {
+            object-fit: fill;
+            width: 100px; /* Ensure image fits entire container */
+        }
+        /* Content container styles */
+        .content-container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 100px 0;
+            color: #fff;
+        }
+        .content-container h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .content-container p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="Homepage-Model-Y-Promo-Mobile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content-container">
+        <h1>Welcome to Your Website</h1>
+        <p>Explore our amazing features and products.</p>
+    </div>
+
+    <!-- <div class="video-container">
+        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop" alt="">
+    </div> -->
+
+    <div class="content-container">
+        <h1>Welcome to Your Website</h1>
+        <p>Explore our amazing features and products.</p>
+    </div>
+
+    <!-- <div class="video-container">
+        <video autoplay loop muted>
+            <source src="Vaathi Raid  Lyric - Master 1080p HD.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div> -->
+
+    <div class="content-container">
+        <h1>Discover More</h1>
+        <p>Check out our latest updates and innovations.</p>
+    </div>
+
+    <!-- Add more video-container and content-container pairs as needed -->
+
+</body>
+</html>

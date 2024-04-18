@@ -1,0 +1,107 @@
+ body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 320px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .pattern-container {
+    display: grid;
+    grid-template-columns: repeat(3, 40px); /* Each column is 40px wide */
+    grid-template-rows: repeat(3, 40px); /* Each row is 40px high 8 */
+    grid-gap: 10px;   
+    justify-content: center;  
+  }
+  
+  .pattern-dot {
+    width: 40px;   /*Adjust width and height to desired size  */
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+  }
+  
+  #dot1 { grid-row: 1; grid-column: 1; }
+  #dot2 { grid-row: 1; grid-column: 2; }
+  #dot3 { grid-row: 1; grid-column: 3; }
+  #dot4 { grid-row: 2; grid-column: 1; }
+  #dot5 { grid-row: 2; grid-column: 2; }
+  #dot6 { grid-row: 2; grid-column: 3; }
+  #dot7 { grid-row: 3; grid-column: 1; }
+  #dot8 { grid-row: 3; grid-column: 2; }
+  #dot9 { grid-row: 3; grid-column: 3; }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+    
+
+  .line {
+    position: absolute;
+    height: 2px;
+    background-color: #007bff;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .pattern-dot.active {
+    background-color: #007bff;
+  } 
+
+  /* body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');  Add your background image 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;  Prevent scrolling 
+}
+
+.container {
+    max-width: 320px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;  Needed for the success message position 
+}
+
+.pattern-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.pattern-dot {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+#wipe-up-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#wipe-up-message i {
+    font-size: 48px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+#wipe-up-message.hide {
+    display: none;
+} */
